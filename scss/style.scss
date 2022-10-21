@@ -772,10 +772,10 @@ body{
 	left: 0;
 	background-color: rgba(255, 255, 255, 0.5);
 	z-index: 999;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 		&_buy-body {
-			display: flex;
-			justify-content: center;
-			align-items: center;
 			width: 564px;
 			background: #FCFCFC;
 			border: 2px solid #F8D24E;
@@ -796,33 +796,137 @@ body{
 		}
 
 		&_buy-title {
+			font-family: 'Seymour One';
+			font-size: 20px;
+			color: $black;
+			text-align: center;
+			margin: 32px 0 103px;
 		}
 
 		&_buy-box {
+			margin-bottom: 40px;
 		}
 
 		&_buy-list {
+			display: flex;
+			justify-content: center;
+			gap: 32px;
 		}
 
-		&_buy-item {
+		&_buy-item--cream {
+			border: 2px solid #96AF8C;
+			filter: drop-shadow(0px 5px 19px rgba(212, 20, 67, 0.1));
+			border-radius: 16px;
+			width: 132px;
+			height: 135px;
+			transition: all .5s;
+			position: relative;
+			&:hover{
+				background-color: #96AF8C;
+			}
+		}
+		&_buy-item--coffee {
+			border: 2px solid #EFD478;
+			filter: drop-shadow(0px 5px 19px rgba(212, 20, 67, 0.1));
+			border-radius: 16px;
+			width: 132px;
+			height: 135px;
+			transition: all .5s;
+			position: relative;
+		}
+		&_buy-item--milkshake {
+			border: 2px solid #D6936D;
+			filter: drop-shadow(0px 5px 19px rgba(212, 20, 67, 0.1));
+			border-radius: 16px;
+			width: 132px;
+			height: 135px; 
+			transition: all .5s;
+			position: relative;
 		}
 
 		&_buy-img {
+			position: absolute;
+			width: 131px;
+			top: -60%;
+			z-index: 1;
+		}
+		&_buy-img--green {
+			background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+			box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+			border-radius: 50%;
+			position: absolute;
+			width: 130px;
+			height: 130px;
+			top: -55%;
+		}
+		&_buy-img--yellow {
+			background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+			box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+			border-radius: 50%;
+			position: absolute;
+			width: 130px;
+			height: 130px;
+			top: -55%;
+		}
+		&_buy-img--orange {
+			background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+			box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+			border-radius: 50%;
+			position: absolute;
+			width: 130px;
+			height: 130px;
+			top: -55%;
 		}
 
 		&_buy-text {
+			letter-spacing: 0.04em;
+			text-transform: uppercase;
+			line-height: 20px;
+			font-weight: 700;
+			color: $black;
+			margin-top: 95px;
+			text-align: center;
 		}
 
 		&_buy-form {
+			margin: 0 auto;
+			display: flex;
+			flex-direction: column;
+			gap: 16px;
+			width: 368px;
 		}
 
 		&_buy-name {
+			font-size: 14px;
+			padding: 11px 16px;
+			color: $black;
+			background: rgba(248, 210, 78, 0.1);
+			border: 1px solid #84A178;
+			border-radius: 10px;
 		}
 
 		&_buy-textarea {
+			font-size: 14px;
+			padding: 11px 16px 53px 16px;
+			color: $black;
+			background: rgba(248, 210, 78, 0.1);
+			border: 1px solid #84A178;
+			border-radius: 10px;
+			resize: none;
 		}
 
 		&_buy-btn {
+			font-weight: 600;
+			font-size: 14px;
+			line-height: 17px;
+			color: $black;
+			padding: 12px 34px;
+			background: #F8D24E;
+			border-radius: 10px;
+			border: none;
+			margin: 32px auto;
+			display: block;
+			cursor: pointer;
 		}
 }
 

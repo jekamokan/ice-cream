@@ -729,8 +729,6 @@ body {
   left: 0;
   background-color: rgba(255, 255, 255, 0.5);
   z-index: 999;
-}
-.popup_buy-body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -740,6 +738,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.popup_buy-body {
   width: 564px;
   background: #FCFCFC;
   border: 2px solid #F8D24E;
@@ -756,6 +756,151 @@ body {
   right: 20px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+}
+.popup_buy-title {
+  font-family: 'Seymour One';
+  font-size: 20px;
+  color: #131313;
+  text-align: center;
+  margin: 32px 0 103px;
+}
+.popup_buy-box {
+  margin-bottom: 40px;
+}
+.popup_buy-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 32px;
+}
+.popup_buy-item--cream {
+  border: 2px solid #96AF8C;
+  -webkit-filter: drop-shadow(0px 5px 19px rgba(212, 20, 67, 0.1));
+          filter: drop-shadow(0px 5px 19px rgba(212, 20, 67, 0.1));
+  border-radius: 16px;
+  width: 132px;
+  height: 135px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  position: relative;
+}
+.popup_buy-item--cream:hover {
+  background-color: #96AF8C;
+}
+.popup_buy-item--coffee {
+  border: 2px solid #EFD478;
+  -webkit-filter: drop-shadow(0px 5px 19px rgba(212, 20, 67, 0.1));
+          filter: drop-shadow(0px 5px 19px rgba(212, 20, 67, 0.1));
+  border-radius: 16px;
+  width: 132px;
+  height: 135px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  position: relative;
+}
+.popup_buy-item--milkshake {
+  border: 2px solid #D6936D;
+  -webkit-filter: drop-shadow(0px 5px 19px rgba(212, 20, 67, 0.1));
+          filter: drop-shadow(0px 5px 19px rgba(212, 20, 67, 0.1));
+  border-radius: 16px;
+  width: 132px;
+  height: 135px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  position: relative;
+}
+.popup_buy-img {
+  position: absolute;
+  width: 131px;
+  top: -60%;
+  z-index: 1;
+}
+.popup_buy-img--green {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(156, 190, 143, 0.7)), to(rgba(156, 190, 143, 0.7))), #D9D9D9;
+  background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+  -webkit-box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+          box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+  border-radius: 50%;
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  top: -55%;
+}
+.popup_buy-img--yellow {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(248, 210, 78, 0.7)), to(rgba(248, 210, 78, 0.7))), #D9D9D9;
+  background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+  -webkit-box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+          box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+  border-radius: 50%;
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  top: -55%;
+}
+.popup_buy-img--orange {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(213, 117, 63, 0.7)), to(rgba(213, 117, 63, 0.7))), #D9D9D9;
+  background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+  -webkit-box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  top: -55%;
+}
+.popup_buy-text {
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  line-height: 20px;
+  font-weight: 700;
+  color: #131313;
+  margin-top: 95px;
+  text-align: center;
+}
+.popup_buy-form {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+  width: 368px;
+}
+.popup_buy-name {
+  font-size: 14px;
+  padding: 11px 16px;
+  color: #131313;
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84A178;
+  border-radius: 10px;
+}
+.popup_buy-textarea {
+  font-size: 14px;
+  padding: 11px 16px 53px 16px;
+  color: #131313;
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84A178;
+  border-radius: 10px;
+  resize: none;
+}
+.popup_buy-btn {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #131313;
+  padding: 12px 34px;
+  background: #F8D24E;
+  border-radius: 10px;
+  border: none;
+  margin: 32px auto;
+  display: block;
+  cursor: pointer;
 }
 
 @media (max-width: 1201px) {
