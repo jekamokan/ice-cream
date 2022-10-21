@@ -202,6 +202,17 @@ body{
 		}
 
 		&__plate-logo {
+			text-align: center;
+			animation: circle 10s infinite linear;
+		}
+		@keyframes circle {
+			0%{
+				transform: rotate(0deg);
+			}
+			100%{
+				transform: rotate(360deg);
+			}
+			
 		}
 
 		&__plate-content {
@@ -225,8 +236,8 @@ body{
 		}
 		&__ice-cream{
 			position: absolute;
-			top: -29px;
-			right: 75px;
+			top: -132px;
+			right: 15px;
 		}
 }
 
@@ -446,6 +457,9 @@ body{
 		&__photo-img {
 			margin: 0 auto;
 			border-radius: 24px;
+			width: 1013px;
+			height: 442px;
+			object-fit: cover;
 		}
 }
 
@@ -750,17 +764,84 @@ body{
 			text-align: center;
 		}
 }
+ .popup {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(255, 255, 255, 0.5);
+	z-index: 999;
+		&_buy-body {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 564px;
+			background: #FCFCFC;
+			border: 2px solid #F8D24E;
+			border-radius: 10px;
+		}
+
+		&_buy-content {
+			position: relative;
+		}
+
+		&_buy-cross {
+			position: absolute;
+			font-size: 60px;
+			color: $black;
+			top: 20px;
+			right: 20px;
+			transform: rotate(45deg);
+		}
+
+		&_buy-title {
+		}
+
+		&_buy-box {
+		}
+
+		&_buy-list {
+		}
+
+		&_buy-item {
+		}
+
+		&_buy-img {
+		}
+
+		&_buy-text {
+		}
+
+		&_buy-form {
+		}
+
+		&_buy-name {
+		}
+
+		&_buy-textarea {
+		}
+
+		&_buy-btn {
+		}
+}
 
 
 
 
 
 
-@media(min-width:1201px){
+
+@media(max-width:1201px){
 	.header{
+		background: url(../images/first-bg.jpg);
 		background-size: cover;
+		&__dots{
+			display: none;
+		}
+		&__ice-cream{
+			display: none;
+		}
 	}
-	.products{
-		background-size: cover;
-	}
+	
 }

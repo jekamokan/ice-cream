@@ -169,31 +169,6 @@ body {
   gap: 14px;
   padding-bottom: 65px;
 }
-.header__plate-logo {
-  text-align: center;
-  -webkit-animation: circle 10s infinite linear;
-          animation: circle 10s infinite linear;
-}
-@-webkit-keyframes circle {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-@keyframes circle {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
 .header__plate-content {
   width: 200px;
   z-index: 10;
@@ -213,8 +188,8 @@ body {
 }
 .header__ice-cream {
   position: absolute;
-  top: -132px;
-  right: 15px;
+  top: -29px;
+  right: 75px;
 }
 
 .products {
@@ -430,10 +405,6 @@ body {
 .sliders__photo-img {
   margin: 0 auto;
   border-radius: 24px;
-  width: 1013px;
-  height: 442px;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .slider {
@@ -721,54 +692,12 @@ body {
   text-align: center;
 }
 
-.popup {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-color: rgba(255, 255, 255, 0.5);
-  z-index: 999;
-}
-.popup_buy-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 564px;
-  background: #FCFCFC;
-  border: 2px solid #F8D24E;
-  border-radius: 10px;
-}
-.popup_buy-content {
-  position: relative;
-}
-.popup_buy-cross {
-  position: absolute;
-  font-size: 60px;
-  color: #131313;
-  top: 20px;
-  right: 20px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-@media (max-width: 1201px) {
+@media (min-width: 1201px) {
   .header {
-    background: url(../images/first-bg.jpg);
     background-size: cover;
   }
-  .header__dots {
-    display: none;
-  }
-  .header__ice-cream {
-    display: none;
+
+  .products {
+    background-size: cover;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
