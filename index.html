@@ -91,15 +91,17 @@
             <div class="products__content">
                 <ul class="products__list">
                     <li class="products__item">
-                        <img class="products__item-img" src="images/ice-1.png" alt="ice-cream">
+                        <img class="products__item-img" id="product" src="images/ice-1.png" alt="ice-cream">
                         <h3 class="products__item-title">
                             ice cream
                         </h3>
                         <p class="products__item-text">
                             Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural stabilizer
                         </p>
-                        <a class="products__item-link" href="" >
-                            <!-- <img class="products__link-img" src="images/arrow-cards.svg" alt="arrow" > -->
+                        <a class="products__item-link" href="#product" >
+                            <!-- <svg class="products__item-arrow" width="41" height="16" viewBox="0 0 41 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M40.7071 8.70711C41.0976 8.31658 41.0976 7.68342 40.7071 7.29289L34.3431 0.928932C33.9526 0.538408 33.3195 0.538408 32.9289 0.928932C32.5384 1.31946 32.5384 1.95262 32.9289 2.34315L38.5858 8L32.9289 13.6569C32.5384 14.0474 32.5384 14.6805 32.9289 15.0711C33.3195 15.4616 33.9526 15.4616 34.3431 15.0711L40.7071 8.70711ZM0 9H40V7H0V9Z" fill="#131313"/>
+                            </svg> -->
                         </a>
                     </li>
                     <li class="products__item">
@@ -110,8 +112,10 @@
                         <p class="products__item-text">
                             Fragrant invigorating drink created from 100% natural ingredients without the use of preservatives and flavor enhancers
                         </p>
-                        <a class="products__item-link" href="" >
-                            <!-- <img class="products__link-img" src="images/arrow-cards.svg" alt="arrow" > -->
+                        <a class="products__item-link" href="#product" >
+                            <!-- <svg class="products__item-arrow" width="41" height="16" viewBox="0 0 41 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M40.7071 8.70711C41.0976 8.31658 41.0976 7.68342 40.7071 7.29289L34.3431 0.928932C33.9526 0.538408 33.3195 0.538408 32.9289 0.928932C32.5384 1.31946 32.5384 1.95262 32.9289 2.34315L38.5858 8L32.9289 13.6569C32.5384 14.0474 32.5384 14.6805 32.9289 15.0711C33.3195 15.4616 33.9526 15.4616 34.3431 15.0711L40.7071 8.70711ZM0 9H40V7H0V9Z" fill="#131313"/>
+                            </svg> -->
                         </a>
                     </li>
                     <li class="products__item">
@@ -122,8 +126,10 @@
                         <p class="products__item-text">
                             Sweet drinks based on milk and ice cream, supplemented with syrups, fruits, berries and other sweets of your choice
                         </p>
-                        <a class="products__item-link" href="" >
-                            <!-- <img class="products__link-img" src="images/arrow-cards.svg" alt="arrow" > -->
+                        <a class="products__item-link" href="#product" >
+                            <!-- <svg class="products__item-arrow" width="41" height="16" viewBox="0 0 41 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M40.7071 8.70711C41.0976 8.31658 41.0976 7.68342 40.7071 7.29289L34.3431 0.928932C33.9526 0.538408 33.3195 0.538408 32.9289 0.928932C32.5384 1.31946 32.5384 1.95262 32.9289 2.34315L38.5858 8L32.9289 13.6569C32.5384 14.0474 32.5384 14.6805 32.9289 15.0711C33.3195 15.4616 33.9526 15.4616 34.3431 15.0711L40.7071 8.70711ZM0 9H40V7H0V9Z" fill="#131313"/>
+                            </svg> -->
                         </a>
                     </li>
                 </ul>
@@ -371,40 +377,113 @@
             </p>
         </div>
     </footer>
-    <div class="popup">
-        <div class="popup_buy-body">
-            <div class="popup_buy-content">
-                <a  class="popup_buy-cross" href="">+</a>
-                <p class="popup_buy-title">Buy now</p>
-                <div class="popup_buy-box">
-                    <ul class="popup_buy-list">
-                        <li class="popup_buy-item--cream">
-                            <img class="popup_buy-img " src="images/ice-modal.png" alt="ice">
-                            <div class="popup_buy-img--green"></div>
-                            <p class="popup_buy-text">ice cream</p>
+    
+    <div class="popupone ">
+        <a  class="popupone__area" href="#"></a>
+        <div class="popupone__buy-body">
+            <div class="popupone__buy-content">
+                <a  class="popupone__buy-cross" href="#">+</a>
+                <p class="popupone__buy-title">Buy now</p>
+                <div class="popupone__buy-box">
+                    <ul class="popupone__buy-list">
+                        <li class="popupone__buy-item--cream">
+                            <img class="popupone__buy-img " src="images/ice-modal.png" alt="ice">
+                            <div class="popupone__buy-img--green"></div>
+                            <p class="popupone__buy-text">ice cream</p>
                         </li>
-                        <li class="popup_buy-item--coffee">
-                            <img class="popup_buy-img " src="images/coffee-modal.png" alt="coffee">
-                            <div class="popup_buy-img--yellow"></div>
-                            <p class="popup_buy-text">ice coffee</p>
+                        <li class="popupone__buy-item--coffee">
+                            <img class="popupone__buy-img " src="images/coffee-modal.png" alt="coffee">
+                            <div class="popupone__buy-img--yellow"></div>
+                            <p class="popupone__buy-text">ice coffee</p>
                         </li>
-                        <li class="popup_buy-item--milkshake">
-                            <img class="popup_buy-img " src="images/milkshake-modal.png" alt="milkshake">
-                            <div class="popup_buy-img--orange"></div>
-                            <p class="popup_buy-text">milkshake</p>
+                        <li class="popupone__buy-item--milkshake">
+                            <img class="popupone__buy-img " src="images/milkshake-modal.png" alt="milkshake">
+                            <div class="popupone__buy-img--orange"></div>
+                            <p class="popupone__buy-text">milkshake</p>
                         </li>
                     </ul>
                 </div>
-                <form  class="popup_buy-form">
-                    <input  class="popup_buy-name" type="text" placeholder="Name">
-                    <input  class="popup_buy-name" type="tel" placeholder="Phone">
-                    <textarea class="popup_buy-textarea" placeholder="Comment"></textarea>
+                <form  class="popupone__buy-form">
+                    <input  class="popupone__buy-name" type="text" placeholder="Name">
+                    <input  class="popupone__buy-name" type="tel" placeholder="Phone">
+                    <textarea class="popupone__buy-textarea" placeholder="Comment"></textarea>
                 </form>
-                <button class="popup_buy-btn" type="submit">Submit</button>
+                <button class="popupone__buy-btn" type="submit">Submit</button>
             </div>
         </div>
     </div>
 
+    <div class="popuptwo ">
+        <a  class="popuptwo__area" href="#"></a>
+        <div class="popuptwo__body">
+            <div class="popuptwo__content">
+                <a  class="popuptwo__cross" href="#product">+</a>
+                <p class="popuptwo__title">Chololate icecream</p>
+                <img class="popuptwo__img" src="images/ice-modal-2.png" alt="ice-cream" >
+                <ul class="popuptwo__list">
+                    <li class="popuptwo__item">
+                        <div class="popuptwo__item-box">
+                            <p class="popuptwo__item-text">320</p>
+                        </div>
+                        <p class="popuptwo__item-title">kcal</p>
+                    </li>
+                    <li class="popuptwo__item">
+                        <div class="popuptwo__item-box">
+                            <p class="popuptwo__item-text">4g</p>
+                        </div>
+                        <p class="popuptwo__item-title">Protein...</p>
+                    </li>
+                    <li class="popuptwo__item">
+                        <div class="popuptwo__item-box">
+                            <p class="popuptwo__item-text">8,2g</p>
+                        </div>
+                        <p class="popuptwo__item-title">Fats</p>
+                    </li>
+                    <li class="popuptwo__item">
+                        <div class="popuptwo__item-box">
+                            <p class="popuptwo__item-text">40,4g</p>
+                        </div>
+                        <p class="popuptwo__item-title">Carbs</p>
+                    </li>
+                </ul>
+                <p class="popuptwo__list-title">Ingredients</p>
+                <ul class="popuptwo__ingredients-list">
+                    <li class="popuptwo__ingredients-item">
+                        <p class="popuptwo__ingredient">Milk</p>
+                        <p class="popuptwo__size">100ml</p>
+                    </li>
+                    <li class="popuptwo__ingredients-item">
+                        <p class="popuptwo__ingredient">Belgian chocolate</p>
+                        <p class="popuptwo__size">20g</p>
+                    </li>
+                    <li class="popuptwo__ingredients-item">
+                        <p class="popuptwo__ingredient">Cream</p>
+                        <p class="popuptwo__size">150ml</p>
+                    </li>
+                    <li class="popuptwo__ingredients-item">
+                        <p class="popuptwo__ingredient">Cocoa powder</p>
+                        <p class="popuptwo__size"> 30g</p>
+                    </li>
+                    <li class="popuptwo__ingredients-item">
+                        <p class="popuptwo__ingredient">Sugar</p>
+                        <p class="popuptwo__size">40g</p>
+                    </li>
+                    <li class="popuptwo__ingredients-item">
+                        <p class="popuptwo__ingredient">Vanilla sugar</p>
+                        <p class="popuptwo__size">10g</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="popupthree">
+        <a  class="popupthree__area" href="#"></a>
+        <div class="popupthree__body">
+            <div class="popupthree__content">
+
+            </div>
+        </div>
+    </div>
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
