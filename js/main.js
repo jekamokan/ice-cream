@@ -34,11 +34,43 @@ $(document).ready(function(){
       $('.products__item-link').click(function (event) {
       $('.popuptwo').addClass('popuptwo__active');
       })
+      $('.products__item-link').click(function (event) {
+      $('.popuptwo__body').addClass('popuptwo__animation');
+      })
       $('.popuptwo__cross').click(function (event) {
       $('.popuptwo').removeClass('popuptwo__active');
+       })
+
+      $('.tradition__btn').click(function (event) {
+      $('.popupthree').addClass('popupthree__active');
+      })
+      $('.tradition__btn').click(function (event) {
+      $('.popupthree__body').addClass('popupthree__animation');
+      })
+      $('.popupthree__cross').click(function (event) {
+      $('.popupthree').removeClass('popupthree__active');
+      })
+    
+      $('.geo__btn-locations').click(function (event) {
+      $('.popupfour').addClass('popupfour__active');
+      })
+      $('.geo__btn-locations').click(function (event) {
+      $('.popupfour__body').addClass('popupfour__animation');
+      })
+      $('.popupfour__cross').click(function (event) {
+      $('.popupfour').removeClass('popupfour__active');
+       })
+
+      $('.geo__btn-franchise').click(function (event) {
+      $('.popupfive').addClass('popupfive__active');
+      })
+      $('.geo__btn-franchise').click(function (event) {
+      $('.popupfive__body').addClass('popupfive__animation');
+      })
+      $('.popupfive__cross').click(function (event) {
+      $('.popupfive').removeClass('popupfive__active');
        })
 });
 
 
 
-products__item-link
