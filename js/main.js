@@ -70,6 +70,18 @@ $(document).ready(function(){
       $('.popupfive__cross').click(function (event) {
       $('.popupfive').removeClass('popupfive__active');
        })
+
+      $('.header__burger-btn').click(function (event) {
+      $('.header__nav').addClass('header__nav--active')
+      $('.header__burger-cross').addClass('header__burger-cross--active')
+      $('.header__burger-btn').addClass('header__burger-line--close') ; 
+      })
+    
+      $('.header__burger-cross').click(function (event) {
+      $('.header__nav').removeClass('header__nav--active')
+      $('.header__burger-cross').removeClass('header__burger-cross--active');
+
+      })
 });
 
 

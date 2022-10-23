@@ -62,14 +62,58 @@ body{
 			align-items: center;
 			margin-bottom: 48px;
 		}
-
-		&__link-logo {
+		&__burger-cross{
+			display: none;
 		}
 
-		&__logo {
+		&__burger-btn {
+			width: 20px;
+			cursor: pointer;
+			position: relative;
+			z-index: 1;
+			height: 20px;
+			display: none;
+			&::before {
+				content: '';
+				position: absolute;
+				top: 2px;
+				width: 100%;
+				height: 2px;
+				background-color: $white;
+				transition: all 0.5s ease;
+				}
+			&::after {
+				content: '';
+				position: absolute;
+				bottom: 0px;
+				width: 100%;
+				height: 2px;
+				background-color: $white;
+				transition: all 0.5s ease;
+				}
+  		}
+		&__burger-btn span {
+			position: absolute;
+			width: 100%;
+			top: 50%;
+			height: 2px;
+			background-color: $white;
 		}
 
-		&__nav {
+		  &__burger-btn.header__burger-line--close {
+			&::before {
+			transform: rotate(45deg);
+			top: 50%;
+			}
+		}
+		&__burger-btn.header__burger-line--close {
+			&::after {
+			transform: rotate(-45deg);
+			bottom: 40%;
+			}
+		}
+		&__burger-btn.header__burger-line--close span {
+		transform: scale(0); 
 		}
 
 		&__nav-list {
@@ -1440,15 +1484,195 @@ body{
 
 
 @media(max-width:1201px){
+	// .header{
+	// 	background: url(../images/first-bg.jpg);
+	// 	background-size: cover;
+	// 	&__dots{
+	// 		display: none;
+	// 	}
+	// 	&__ice-cream{
+	// 		display: none;
+	// 	}
+	// }
+	
+}
+@media(max-width:769px){
 	.header{
-		background: url(../images/first-bg.jpg);
-		background-size: cover;
+		&__btn{
+			margin-left: 38px;
+		}
+		&__burger-btn{
+			display: block;
+			margin-left: auto;
+		}
+		&__burger-cross{
+			display: block;
+			z-index: 12;
+			position: absolute;
+    		right: 32px;
+    		top: 32px;
+    		font-size: 50px;
+			transform: translateY(-250%);
+			transition: all .5s;
+		}
+		&__burger-cross--active{
+			transform: translateY(0);
+			transform: rotate(45deg);
+
+		}
+		&__logo{
+			width: 41px;
+			height: 44px;
+		}
+		&__nav{
+			position: absolute;
+			background: #85A279;
+			width: 100%;
+			height: 100vh;
+			z-index: 11;
+			top: 0;
+			transform: translateY(-200%);
+			transition: all .5s;
+		}
+		&__nav--active{
+			transform: translateY(0);
+		}
+		&__top{
+			position: relative;
+		}
+		&__link-logo{
+			z-index: 12;
+		}
+		&__nav-list{
+			    flex-direction: column;
+				align-items: center;
+				gap: 40px;
+				margin-top: 140px;
+		}
+		&__nav-link{
+			font-weight: 700;
+			font-size: 48px;
+			line-height: 59px;
+			&:hover{
+				color: $black;
+			}
+		}
+		&__ice-title{
+			width: 185px;
+			font-size: 18px;
+			line-height: 23px;
+			& span{
+				font-size: 24px;
+				line-height: 13px;
+			}
+		}
+		&__ice-product{
+			padding: 7px 10px;
+			font-size: 8px;
+			line-height: 10px;
+		}
+		&__ice-how{
+			font-size: 8px;
+			line-height: 10px;
+		}
+		&__ice-number{
+			font-size: 28px;
+			line-height: 34px;
+		}
+		&__ice-text{
+			font-size: 8px;
+			line-height: 10px;
+		}
+		&__ice-item{
+			margin-bottom: 20px;
+		}
+		&__ice-cream{
+			height: 500px;
+			top: -48px;
+		}
+		&__plate{
+			align-items: center;
+		}
+		&__plate-logo{
+			width: 152px;
+    		height: 152px;
+		}
+		&__plate-text{
+			width: 151px;
+    		font-size: 12px;
+    		line-height: 17px;
+			margin: 0 0 15px 0;
+		}
 		&__dots{
 			display: none;
 		}
-		&__ice-cream{
-			display: none;
+	}
+	.products{
+		&__content{
+			margin-top: 200px;
+		}
+		&__item{
+			width: 240px;
+			padding-bottom: 0;
+		}
+		&__item-title{
+			font-size: 22px;
+			line-height: 27px;
+			padding: 107px 0 40px;
+		}
+		&__item-text{
+			font-size: 14px;
+			line-height: 25px;
+			padding: 0 28px 87px 28px;
 		}
 	}
-	
+	.tradition{
+		padding-bottom: 204px;
+		&__img{
+			width: 336px;
+			height: 356px;
+		}
+		&__text{
+			font-size: 12px;
+			line-height: 21px;
+		}
+		&__info-number{
+			font-size: 48px;
+			line-height: 59px;
+		}
+		&__info-text{
+			font-size: 14px;
+			line-height: 24px;
+		}
+		&__info-item{
+			width: 152px;
+		}
+		&__info-list{
+			gap: 80px;
+			justify-content: center;
+		}
+	}
+	.sliders{
+		&__photo-img{
+			width: 704px;
+			height: 327px;
+		}
+		&__photo{
+			width: 704px;
+			top: -165px;
+		}
+	}
+	.slider{
+		margin-bottom: 383px;
+		&__text{
+			width: 705px;
+			padding: 28px 80px;
+		}
+	}
+	.geo{
+		&__item{
+			width: 224px;
+			padding: 40px 24px;
+		}
+	}
 }
