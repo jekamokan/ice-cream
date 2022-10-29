@@ -350,10 +350,6 @@ body {
   padding: 0 64px 60px 64px;
 }
 .products__item-link {
-  -webkit-transition: all .3s;
-  transition: all .3s;
-}
-.products__item-link {
   background-image: url(../images/arrow-cards.svg);
   background-repeat: no-repeat;
   width: 60px;
@@ -573,6 +569,7 @@ body {
 .geo__city {
   color: #131313;
   margin-bottom: 8px;
+  font-weight: 500;
 }
 .geo__address {
   display: inline-block;
@@ -690,6 +687,9 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .footer__content::after {
   content: '';
@@ -1672,7 +1672,138 @@ body {
   .geo__item {
     width: 224px;
     padding: 40px 24px;
+    font-size: 14px;
+    line-height: 26px;
+  }
+  .geo__box-title {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .geo__address {
+    padding-bottom: 26px;
+  }
+  .geo__list {
+    margin-bottom: 60px;
+  }
+
+  .footer {
+    margin-top: -60px;
+  }
+  .footer__title {
+    font-size: 26px;
+    line-height: 32px;
+    width: 352px;
+  }
+  .footer__title span {
+    font-size: 48px;
+    line-height: 59px;
+  }
+  .footer__contacts {
+    font-size: 14px;
+    line-height: 26px;
+    margin-top: 32px;
+    padding-bottom: 0;
   }
 }
+@media (max-width: 481px) {
+  .header__btn {
+    padding: 10px 34px;
+    font-size: 13px;
+    line-height: 16px;
+  }
+  .header__ice-cream {
+    height: 350px;
+    top: 82px;
+    right: 0;
+  }
+  .header__plate-text {
+    display: none;
+  }
+  .header__plate-link {
+    display: none;
+  }
+  .header__nav-link {
+    font-size: 35px;
+    line-height: 50px;
+  }
 
+  .popupone__buy-name {
+    font-size: 13px;
+    padding: 4px 10px;
+  }
+  .popupone__buy-textarea {
+    font-size: 13px;
+    padding: 5px 10px 30px 10px;
+  }
+  .popupone__buy-img {
+    width: 115px;
+  }
+  .popupone__buy-img--green, .popupone__buy-img--yellow, .popupone__buy-img--orange {
+    width: 115px;
+    height: 115px;
+  }
+  .popupone__buy-item--cream, .popupone__buy-item--coffee, .popupone__buy-item--milkshake {
+    width: 120px;
+    height: 120px;
+  }
+  .popupone__buy-text {
+    margin-top: 85px;
+  }
+
+  .products {
+    background-size: cover;
+  }
+  .products__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 180px;
+  }
+  .products__item-img {
+    top: -28%;
+  }
+  .products__item-text {
+    height: 237px;
+  }
+
+  .popuptwo__ingredients-list {
+    width: 300px;
+  }
+  .popuptwo__title {
+    font-size: 17px;
+    margin: 18px 0 13px;
+  }
+  .popuptwo__img {
+    width: 155px;
+  }
+  .popuptwo__body {
+    width: 385px;
+  }
+
+  .tradition__title {
+    font-size: 26px;
+    line-height: 30px;
+  }
+  .tradition__title span {
+    font-size: 30px;
+    width: 245px;
+    margin: 0 auto;
+  }
+  .tradition__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 60px;
+    gap: 55px;
+  }
+  .tradition__box {
+    width: 385px;
+    text-align: center;
+  }
+}
 /*# sourceMappingURL=style.css.map */

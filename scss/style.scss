@@ -358,9 +358,7 @@ body{
 			padding: 0 64px 60px 64px;
 		}
 
-		&__item-link{
-			transition: all .3s;
-		}
+		
 		&__item-link{
 			background-image: url(../images/arrow-cards.svg);
 			background-repeat: no-repeat;
@@ -374,6 +372,7 @@ body{
 			&:focus{
 				background-image: url(../images/arrow-cards3.svg);
 			}
+			
 		}
 
 		&__item-arrow:hover{
@@ -587,6 +586,7 @@ body{
 		&__city {
 			color: $black;
 			margin-bottom: 8px;
+			font-weight: 500;
 		}
 
 		&__address {
@@ -717,6 +717,7 @@ body{
 			display: flex;
 			justify-content: space-between;
 			position: relative;
+			align-items: center;
 			&::after{
 				content: '';
 				position: absolute;
@@ -1670,9 +1671,144 @@ body{
 		}
 	}
 	.geo{
+		
 		&__item{
 			width: 224px;
 			padding: 40px 24px;
+			font-size: 14px;
+			line-height: 26px;
+		}
+		&__box-title{
+			font-size: 16px;
+			line-height: 30px;
+		}
+		
+		&__address{
+			padding-bottom: 26px;
+		}
+		&__list{
+			margin-bottom: 60px;
+		}
+	}
+	.footer{
+		margin-top: -60px;
+		&__title{
+			font-size: 26px;
+			line-height: 32px;
+			width: 352px;
+			& span{
+				font-size: 48px;
+				line-height: 59px;
+			}
+		}
+		&__contacts{
+			font-size: 14px;
+			line-height: 26px;
+			margin-top: 32px;
+			padding-bottom: 0;
+		}
+		
+	}
+}
+@media(max-width:481px){
+	.header{
+		&__btn{
+			padding: 10px 34px;
+			font-size: 13px;
+			line-height: 16px;
+		}
+		&__ice-cream{
+			height: 350px;
+			top: 82px;
+			right: 0;
+		}
+		&__plate-text{
+			display: none;
+		}
+		&__plate-link{
+			display: none;
+		}
+		&__nav-link{
+			font-size: 35px;
+			line-height: 50px;
+		}
+	}
+	.popupone{
+		&__buy-name{
+			font-size: 13px;
+			padding: 4px 10px;
+		}
+		&__buy-textarea{
+			font-size: 13px;
+			padding: 5px 10px 30px 10px;
+		}
+		&__buy-img{
+			width: 115px;
+		}
+		&__buy-img--green,
+		&__buy-img--yellow,
+		&__buy-img--orange{
+			width: 115px;
+			height: 115px;
+		}
+		&__buy-item--cream,
+		&__buy-item--coffee,
+		&__buy-item--milkshake{
+			width: 120px;
+			height: 120px;
+		}
+		&__buy-text{
+			margin-top: 85px;
+		}
+		
+	}
+	.products{
+		background-size: cover;
+		&__list{
+			flex-direction: column;
+			align-items: center;
+			gap: 180px;
+		}
+		&__item-img{
+			top: -28%;
+		}
+		&__item-text{
+			height: 237px;
+		}
+	}
+	.popuptwo{
+		&__ingredients-list{
+			width: 300px;
+		}
+		&__title{
+			font-size: 17px;
+			margin: 18px 0 13px;
+		}
+		&__img{
+			width: 155px;
+		}
+		&__body{
+			width: 385px;
+		}
+	}
+	.tradition{
+		&__title{
+			font-size: 26px;
+			line-height: 30px;
+			& span{
+				font-size: 30px;
+				width: 245px;
+				margin: 0 auto;
+			}
+		}
+		&__content{
+			flex-direction: column;
+			margin-top: 60px;
+			gap: 55px;
+		}
+		&__box{
+			width: 385px;
+			text-align: center;
 		}
 	}
 }
