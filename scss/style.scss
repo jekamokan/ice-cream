@@ -156,6 +156,9 @@ body{
 				transition: 0.3s;
 			}
 		}
+		&__btn-burger{
+			display: none;
+		}
 		
 
 		&__ice {
@@ -492,7 +495,7 @@ body{
 	background-repeat: no-repeat;
 	background-size: cover;
 		&__photo {
-			width: 1013px;
+			max-width: 1013px;
 			margin: 0 auto;
 			position: relative;
 			top: -95px;
@@ -562,7 +565,7 @@ body{
 
 		&__item {
 			padding: 40px;
-			width: 368px;
+			max-width: 368px;
 			background: #FFFFFF;
 			box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
 			border-radius: 24px;
@@ -1659,21 +1662,21 @@ body{
 			height: 327px;
 		}
 		&__photo{
-			width: 704px;
+			// width: 704px;
 			top: -165px;
 		}
 	}
 	.slider{
 		margin-bottom: 383px;
 		&__text{
-			width: 705px;
+			max-width: 705px;
 			padding: 28px 80px;
 		}
 	}
 	.geo{
 		
 		&__item{
-			width: 224px;
+			max-width: 224px;
 			padding: 40px 24px;
 			font-size: 14px;
 			line-height: 26px;
@@ -1807,8 +1810,336 @@ body{
 			gap: 55px;
 		}
 		&__box{
-			width: 385px;
+			width: 300px;
+			text-align: center;
+		}
+		&__info-list{
+			gap: 35px;
+		}
+		&__info-number{
+			font-size: 43px;
+			margin: 25px 0 16px;
+		}
+	}
+	.sliders{
+		&__photo{
+			// max-width: 450px;
+		}
+		&__photo-img{
+			height: 250px;
+		}
+	}
+	.slider{
+		margin-top: -50px !important;
+		&__text{
+			max-width: 450px;
+		}
+	}
+	.geo{
+		&__list{
+			flex-direction: column;
+			align-items: center;
+		}
+		&__item{
+			max-width: 320px;
+		}
+	}
+	.popupfour{
+		&__body{
+			width: 430px;
+		}
+		&__map{
+			width: 405px;
+		}
+	}
+	.popupfive{
+		&__body{
+			width: 430px;
+		}
+		&__text{
+			max-width: 420px;
+			text-align: center;
+			font-size: 14px;
+			line-height: 22px;
+		}
+		&__form{
+			gap: 10px;
+		}
+		&__input{
+    		padding: 7px 16px;
+		}
+		&__textarea{
+			padding-bottom: 30px;
+		}
+	}
+	.footer{
+		&__content{
+			flex-direction: column;
+			align-items: flex-start;
+		}
+		&__box{
+			margin-left: auto;
+		}
+	}
+}
+@media(max-width:400px){
+	.header{
+		&__plate-logo{
+			visibility: hidden;
+		}
+		&__ice-cream{
+			top: 93px;
+		}
+	}
+	.products{
+		&__title{
+			font-size: 28px;
+		}
+		&__title span{
+			font-size: 34px;
+		}
+	}
+	.tradition{
+		&__info-list{
+			flex-direction: column;
+			align-items: center;
+			gap: 55px;
+		}
+		&__info-number{
+			margin:10px 0;
+		}
+	}
+	.geo{
+		&__btn-locations,
+		&__btn-franchise{
+			left: 50%;
+			transform: translate(-50%);
+			margin-bottom: 20px;
+		}
+	}
+	.footer{
+		&__title{
+			font-size: 24px;
+		}
+		&__title span{
+			font-size: 46px;
+		}
+	}
+	.popupone{
+		&__buy-list{
+			flex-direction: column;
+			gap: 80px;
+			align-items: center;
+			overflow: auto;
+		}
+		&__buy-body{
+			width: 355px;
+		}
+		&__buy-form{
+			width: 320px;
+		}
+	}
+	.popupthree{
+		&__body{
+			width: 380px;
+		}
+		&__video{
+			width: 360px;
+		}
+		&__text{
+			width: 360px;
 			text-align: center;
 		}
 	}
+	.popupfour{
+		&__body{
+			width: 380px;
+		}
+		&__map{
+			width: 365px;
+		}
+	}
+	.popupfive{
+		&__body{
+			width: 380px;
+		}
+		&__text{
+			width: 370px;
+		}
+		&__input,
+		&__textarea{
+			width: 350px;
+		}
+	}
+}
+@media(max-width:376px){
+	.footer{
+		&__title{
+			width: 315px;
+		}
+	}
+	.popuptwo{
+		&__body{
+			width: 345px;
+		}
+	}
+	.popupthree{
+		&__body{
+			width: 345px;
+		}
+		&__video{
+			width: 330px;
+		}
+		&__text{
+			width: 300px;
+		}
+	}
+	.popupfour{
+		&__body{
+			width: 365px;
+		}
+		&__map{
+			width: 355px;
+		}
+	}
+	.popupfive{
+		&__title{
+			font-size: 17px;
+		}
+		&__text{
+			font-size: 12px;
+		}
+		&__body{
+			width: 350px;
+		}
+		&__text{
+			width: 330px;
+		}
+		&__input,
+		&__textarea{
+			width: 320px;
+		}
+	}
+}
+@media(max-width:321px){
+	.header{
+		&__btn{
+			display: none;
+		}
+		&__btn-burger{
+			display: block;
+			margin: 80px auto;
+		}
+	}
+	.products{
+		&__title{
+			font: 26px;
+		}
+		&__title span{
+			font: 32px;
+		}
+	}
+	.tradition{
+		&__img{
+			width: 278px;
+			height: 278px;
+		}
+		&__box{
+			width: 230px;
+		}
+		&__info-number{
+			font-size: 37px;
+		}
+		&__info-text{
+			font-size: 12px;
+		}
+	}
+	.geo{
+		&__item{
+			max-width: 260px;
+		}
+	}
+	.footer{
+		&__title{
+			width: 300px;
+			font-size: 20px;
+		}
+		&__title span{
+			font-size: 40px;
+			line-height: 50px;
+		}
+		&__contacts{
+			font-size: 10px;
+		}
+	}
+	.popupone{
+		&__buy-body{
+			width: 280px;
+		}
+		&__buy-form{
+			width: 255px;
+		}
+	}
+	.popuptwo{
+		&__body{
+			width: 300px;
+		}
+		&__list{
+			gap: 10px;
+		}
+		&__title{
+			margin-top: 30px;
+		}
+		&__cross{
+			top: -20px;
+			right: 5px;
+		}
+	}
+	.popupthree{
+		&__body{
+			width: 300px;
+		}
+		&__video{
+			width: 290px;
+		}
+		&__text{
+			width: 290px;
+		}
+		&__cross{
+			top: -25px;
+			right: 5px;
+		}
+	}
+	.popupfour{
+		&__body{
+			width: 310px;
+		}
+		&__map{
+			width: 300px;
+		}
+		&__cross{
+			top: -25px;
+			right: 5px;
+		}
+	}
+	.popupfive{
+		&__title{
+			width: auto;
+		}
+		&__body{
+			width: 310px;
+		}
+		&__text{
+			width: 306px;
+		}
+		&__input,
+		&__textarea{
+			width: 300px;
+		}
+		&__cross{
+			top: -25px;
+			right: 5px;
+		}
+	}
+	
 }

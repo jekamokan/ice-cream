@@ -146,6 +146,9 @@ body {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
+.header__btn-burger {
+  display: none;
+}
 .header__ice {
   position: relative;
 }
@@ -477,7 +480,7 @@ body {
   background-size: cover;
 }
 .sliders__photo {
-  width: 1013px;
+  max-width: 1013px;
   margin: 0 auto;
   position: relative;
   top: -95px;
@@ -546,7 +549,7 @@ body {
 }
 .geo__item {
   padding: 40px;
-  width: 368px;
+  max-width: 368px;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
           box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
@@ -1657,7 +1660,6 @@ body {
     height: 327px;
   }
   .sliders__photo {
-    width: 704px;
     top: -165px;
   }
 
@@ -1665,12 +1667,12 @@ body {
     margin-bottom: 383px;
   }
   .slider__text {
-    width: 705px;
+    max-width: 705px;
     padding: 28px 80px;
   }
 
   .geo__item {
-    width: 224px;
+    max-width: 224px;
     padding: 40px 24px;
     font-size: 14px;
     line-height: 26px;
@@ -1802,8 +1804,319 @@ body {
     gap: 55px;
   }
   .tradition__box {
-    width: 385px;
+    width: 300px;
     text-align: center;
   }
+  .tradition__info-list {
+    gap: 35px;
+  }
+  .tradition__info-number {
+    font-size: 43px;
+    margin: 25px 0 16px;
+  }
+
+  .sliders__photo-img {
+    height: 250px;
+  }
+
+  .slider {
+    margin-top: -50px !important;
+  }
+  .slider__text {
+    max-width: 450px;
+  }
+
+  .geo__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .geo__item {
+    max-width: 320px;
+  }
+
+  .popupfour__body {
+    width: 430px;
+  }
+  .popupfour__map {
+    width: 405px;
+  }
+
+  .popupfive__body {
+    width: 430px;
+  }
+  .popupfive__text {
+    max-width: 420px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .popupfive__form {
+    gap: 10px;
+  }
+  .popupfive__input {
+    padding: 7px 16px;
+  }
+  .popupfive__textarea {
+    padding-bottom: 30px;
+  }
+
+  .footer__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .footer__box {
+    margin-left: auto;
+  }
 }
+@media (max-width: 400px) {
+  .header__plate-logo {
+    visibility: hidden;
+  }
+  .header__ice-cream {
+    top: 93px;
+  }
+
+  .products__title {
+    font-size: 28px;
+  }
+  .products__title span {
+    font-size: 34px;
+  }
+
+  .tradition__info-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 55px;
+  }
+  .tradition__info-number {
+    margin: 10px 0;
+  }
+
+  .geo__btn-locations, .geo__btn-franchise {
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    margin-bottom: 20px;
+  }
+
+  .footer__title {
+    font-size: 24px;
+  }
+  .footer__title span {
+    font-size: 46px;
+  }
+
+  .popupone__buy-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 80px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: auto;
+  }
+  .popupone__buy-body {
+    width: 355px;
+  }
+  .popupone__buy-form {
+    width: 320px;
+  }
+
+  .popupthree__body {
+    width: 380px;
+  }
+  .popupthree__video {
+    width: 360px;
+  }
+  .popupthree__text {
+    width: 360px;
+    text-align: center;
+  }
+
+  .popupfour__body {
+    width: 380px;
+  }
+  .popupfour__map {
+    width: 365px;
+  }
+
+  .popupfive__body {
+    width: 380px;
+  }
+  .popupfive__text {
+    width: 370px;
+  }
+  .popupfive__input, .popupfive__textarea {
+    width: 350px;
+  }
+}
+@media (max-width: 376px) {
+  .footer__title {
+    width: 315px;
+  }
+
+  .popuptwo__body {
+    width: 345px;
+  }
+
+  .popupthree__body {
+    width: 345px;
+  }
+  .popupthree__video {
+    width: 330px;
+  }
+  .popupthree__text {
+    width: 300px;
+  }
+
+  .popupfour__body {
+    width: 365px;
+  }
+  .popupfour__map {
+    width: 355px;
+  }
+
+  .popupfive__title {
+    font-size: 17px;
+  }
+  .popupfive__text {
+    font-size: 12px;
+  }
+  .popupfive__body {
+    width: 350px;
+  }
+  .popupfive__text {
+    width: 330px;
+  }
+  .popupfive__input, .popupfive__textarea {
+    width: 320px;
+  }
+}
+@media (max-width: 321px) {
+  .header__btn {
+    display: none;
+  }
+  .header__btn-burger {
+    display: block;
+    margin: 80px auto;
+  }
+
+  .products__title {
+    font: 26px;
+  }
+  .products__title span {
+    font: 32px;
+  }
+
+  .tradition__img {
+    width: 278px;
+    height: 278px;
+  }
+  .tradition__box {
+    width: 230px;
+  }
+  .tradition__info-number {
+    font-size: 37px;
+  }
+  .tradition__info-text {
+    font-size: 12px;
+  }
+
+  .geo__item {
+    max-width: 260px;
+  }
+
+  .footer__title {
+    width: 300px;
+    font-size: 20px;
+  }
+  .footer__title span {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .footer__contacts {
+    font-size: 10px;
+  }
+
+  .popupone__buy-body {
+    width: 280px;
+  }
+  .popupone__buy-form {
+    width: 255px;
+  }
+
+  .popuptwo__body {
+    width: 300px;
+  }
+  .popuptwo__list {
+    gap: 10px;
+  }
+  .popuptwo__title {
+    margin-top: 30px;
+  }
+  .popuptwo__cross {
+    top: -20px;
+    right: 5px;
+  }
+
+  .popupthree__body {
+    width: 300px;
+  }
+  .popupthree__video {
+    width: 290px;
+  }
+  .popupthree__text {
+    width: 290px;
+  }
+  .popupthree__cross {
+    top: -25px;
+    right: 5px;
+  }
+
+  .popupfour__body {
+    width: 310px;
+  }
+  .popupfour__map {
+    width: 300px;
+  }
+  .popupfour__cross {
+    top: -25px;
+    right: 5px;
+  }
+
+  .popupfive__title {
+    width: auto;
+  }
+  .popupfive__body {
+    width: 310px;
+  }
+  .popupfive__text {
+    width: 306px;
+  }
+  .popupfive__input, .popupfive__textarea {
+    width: 300px;
+  }
+  .popupfive__cross {
+    top: -25px;
+    right: 5px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
