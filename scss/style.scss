@@ -855,6 +855,7 @@ body{
 			transition:all .8s;
 			opacity: 0;
 			transform: translateY(-100%);
+			margin: 0 20px;
 		}
 
 		&__buy-content {
@@ -1057,6 +1058,8 @@ body{
 			transition:all .8s;
 			opacity: 0;
 			transform: translateY(-100%);
+			margin: 0 20px;
+
 		
 		}
 		&__animation{
@@ -1209,6 +1212,8 @@ body{
 			transition: all .8s;
 			opacity: 0;
 			transform: translateY(-100%);
+			margin: 0 20px;
+
 		}
 
 		&__animation{
@@ -1298,6 +1303,8 @@ body{
 			transition: all .8s;
 			opacity: 0;
 			transform: translateY(-100%);
+			margin: 0 20px;
+
 		}
 
 		&__animation{
@@ -1388,6 +1395,8 @@ body{
 			transition: all .8s;
 			opacity: 0;
 			transform: translateY(-100%);
+			margin: 0 20px;
+
 		}
 
 		&__animation{
@@ -1879,6 +1888,60 @@ body{
 		}
 		&__box{
 			margin-left: auto;
+		}
+	}
+}
+@media(max-width:429px){
+	.header{
+		&__ice-cream{
+			top: 93px;
+		}
+	}
+	.popupone{
+		&__buy-img--green,
+		&__buy-img--yellow,
+		&__buy-img--orange{
+			width: 96px;
+			height: 97px;
+		}
+		&__buy-item--cream,
+		&__buy-item--coffee,
+		&__buy-item--milkshake{
+			width: 100px;
+			height: 100px;
+		}
+		&__buy-list{
+			gap: 10px;
+		}
+		&__buy-text{
+			font-size: 14px;
+			margin-top: 75px;
+		}
+		&__buy-form{
+			width: 330px;
+		}
+	}
+	.popupthree{
+		&__video{
+			width: 345px;
+		}
+		&__text{
+			width: 330px;
+		}
+	}
+	.popupfour{
+		&__map{
+			width: 360px;
+		}
+	}
+	.popupfive{
+		&__text{
+			width: 390px;
+			padding: 0 10px;
+		}
+		&__input,
+		&__textarea{
+			width: 350px;
 		}
 	}
 }

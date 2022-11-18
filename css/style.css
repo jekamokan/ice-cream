@@ -826,6 +826,7 @@ body {
   opacity: 0;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
+  margin: 0 20px;
 }
 .popupone__buy-content {
   position: relative;
@@ -1044,6 +1045,7 @@ body {
   opacity: 0;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
+  margin: 0 20px;
 }
 .popuptwo__animation {
   opacity: 1;
@@ -1210,6 +1212,7 @@ body {
   opacity: 0;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
+  margin: 0 20px;
 }
 .popupthree__animation {
   opacity: 1;
@@ -1300,6 +1303,7 @@ body {
   opacity: 0;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
+  margin: 0 20px;
 }
 .popupfour__animation {
   opacity: 1;
@@ -1394,6 +1398,7 @@ body {
   opacity: 0;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
+  margin: 0 20px;
 }
 .popupfive__animation {
   opacity: 1;
@@ -1876,6 +1881,49 @@ body {
   }
   .footer__box {
     margin-left: auto;
+  }
+}
+@media (max-width: 429px) {
+  .header__ice-cream {
+    top: 93px;
+  }
+
+  .popupone__buy-img--green, .popupone__buy-img--yellow, .popupone__buy-img--orange {
+    width: 96px;
+    height: 97px;
+  }
+  .popupone__buy-item--cream, .popupone__buy-item--coffee, .popupone__buy-item--milkshake {
+    width: 100px;
+    height: 100px;
+  }
+  .popupone__buy-list {
+    gap: 10px;
+  }
+  .popupone__buy-text {
+    font-size: 14px;
+    margin-top: 75px;
+  }
+  .popupone__buy-form {
+    width: 330px;
+  }
+
+  .popupthree__video {
+    width: 345px;
+  }
+  .popupthree__text {
+    width: 330px;
+  }
+
+  .popupfour__map {
+    width: 360px;
+  }
+
+  .popupfive__text {
+    width: 390px;
+    padding: 0 10px;
+  }
+  .popupfive__input, .popupfive__textarea {
+    width: 350px;
   }
 }
 @media (max-width: 400px) {
