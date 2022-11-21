@@ -1852,7 +1852,15 @@ body{
 		&__item{
 			max-width: 320px;
 		}
+		&__btn-locations,
+		&__btn-franchise{
+			display: block;
+			left: 50%;
+			transform: translate(-50%);
+			margin-bottom: 20px;
+		}
 	}
+	
 	.popupfour{
 		&__body{
 			width: 430px;
@@ -1972,14 +1980,7 @@ body{
 			margin:10px 0;
 		}
 	}
-	.geo{
-		&__btn-locations,
-		&__btn-franchise{
-			left: 50%;
-			transform: translate(-50%);
-			margin-bottom: 20px;
-		}
-	}
+	
 	.footer{
 		&__title{
 			font-size: 24px;

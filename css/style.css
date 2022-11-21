@@ -1843,6 +1843,13 @@ body {
   .geo__item {
     max-width: 320px;
   }
+  .geo__btn-locations, .geo__btn-franchise {
+    display: block;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    margin-bottom: 20px;
+  }
 
   .popupfour__body {
     width: 430px;
@@ -1953,13 +1960,6 @@ body {
   }
   .tradition__info-number {
     margin: 10px 0;
-  }
-
-  .geo__btn-locations, .geo__btn-franchise {
-    left: 50%;
-    -webkit-transform: translate(-50%);
-            transform: translate(-50%);
-    margin-bottom: 20px;
   }
 
   .footer__title {
@@ -2166,5 +2166,4 @@ body {
     right: 5px;
   }
 }
-
 /*# sourceMappingURL=style.css.map */
